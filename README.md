@@ -53,5 +53,6 @@ OpenAi gym tutorial.
 How to create a new environnment in gym.
 
 https://github.com/openai/gym/blob/master/docs/creating-environments.md
+
 https://github.com/openai/gym-soccer
 
