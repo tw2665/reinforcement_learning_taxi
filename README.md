@@ -48,9 +48,9 @@ Resource (Reference)
   * 莫煩 python 教學 (Youtube about RL)
   https://www.youtube.com/channel/UCdyjiB5H8Pu7aDTNVXTTpcg
   
-OpenAi gym tutorial.
+## OpenAi gym tutorial.
 
-How to create a new environnment in gym.
+### How to create a new environnment in gym.
 
 https://github.com/openai/gym/blob/master/docs/creating-environments.md
 
