@@ -56,6 +56,6 @@ https://github.com/openai/gym/blob/master/docs/creating-environments.md
 
 https://github.com/openai/gym-soccer
 
-How to modify Taxi environment
-  * Open taxi.py. It contains map, so we modify this map, and adjust number of states, columns, rows, and so on.
-  * 
+### How to modify Taxi environment
+  * I think the puickest way is to directly update original taxi.py. It contains map, so we modify this map, and adjust number of states, columns, rows, and so on. And we don't have to change any registration or anything.
+  * But it's DANGEROUS.
