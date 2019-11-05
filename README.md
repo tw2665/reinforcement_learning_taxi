@@ -71,7 +71,7 @@ Original taxi env:
   
  Potential updates:
  
- * Add a preset number of penaties. 
+ * Add penaties and rewards. 
  * Increase canvas size based on needs.
  * Change number of destination or pick-up locations.
  * Limit the direction of turns under some circumstances.
