@@ -102,28 +102,28 @@ class TaxiEnv(discrete.DiscreteEnv):
 
                                 if action == 0:
                                     new_row = min(row + 1, max_row)
-                                    if sur_idx == 0: #canday
+                                    if sur_idx == 0: #candy
                                         reward += 5
                                     elif sur_idx == 1: #garbage bin
                                         reward -= 2
 
                                 elif action == 1:
                                     new_row = max(row - 1, 0)
-                                    if sur_idx == 0: #canday
+                                    if sur_idx == 0: #candy
                                         reward += 5
                                     elif sur_idx == 1: #garbage bin
                                         reward -= 2           
 
                                 if action == 2 and self.desc[1 + row, 2 * col + 2] == b":":
                                     new_col = min(col + 1, max_col)
-                                    if sur_idx == 0: #canday
+                                    if sur_idx == 0: #candy
                                         reward += 5
                                     elif sur_idx == 1: #garbage bin
                                         reward -= 2          
 
                                 elif action == 3 and self.desc[1 + row, 2 * col] == b":":
                                     new_col = max(col - 1, 0)
-                                    if sur_idx == 0: #canday
+                                    if sur_idx == 0: #candy
                                         reward += 5
                                     elif sur_idx == 1: #garbage bin
                                         reward -= 2
