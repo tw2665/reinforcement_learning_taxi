@@ -87,6 +87,10 @@ Original taxi env:
 
 ## Terminology
 
+Time step:
+
+* Time step is a function taking input of action and returns next observation (aka state) and reward from that action. 
+
 Policy:
  
 * Policy is a strategy that an agent take.
