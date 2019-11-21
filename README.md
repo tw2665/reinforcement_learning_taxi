@@ -76,10 +76,40 @@ Original taxi env:
  * Change number of destination or pick-up locations.
  * Limit the direction of turns under some circumstances.
 
- Policy:
+## Workflow of using TF-agent to perform Deep Q-learning
+
+1. Make environment by tf_py_environment
+2. Make network by q_network
+3. Make agent by dqn_agent (network is set inside agent)
+4. Make replay buffer
+5. Set environment, agent, and replay buffer inside driver
+6. Perform training by getting trajectory from replay buffer and feed the trajectory into train method from agent object 
+
+## Terminology
+
+Policy:
  
- * Policy is a strategy that an agent take.
- * The goal of RL is to learn the best policy.
- * Policy is a function which has input as state (or observation) and returns output as action.
- * We use policy to make an agent decide which action to take in a given state.
- * In practice, policy is a set of values in a look-up table
+* Policy is a strategy that an agent take.
+* The goal of RL is to learn the best policy.
+* Policy is a function which has input as state (or observation) and returns output as action.
+* We use policy to make an agent decide which action to take in a given state.
+* In practice, policy is a set of values in a look-up table
+
+Driver:
+
+* Driver is used to train agent.
+* People say that we use driver to collect experience from environment.
+* It is a object to run a loop of executing a policy in an environment.
+* The result of drive will be stored in Trajectory.
+
+Trajectory:
+
+* Trajectory is a tuple containing data from training.
+* It includes observation (aka state) from environment, action taken by policy, reward, current and next step.
+* It is like experience.
+
+Replay buffer:
+
+* Replay buffer is an object to store trajectory.
+* It gets subset of trajectory to replay a sequence of the subset or sample.
+* It requires data_spec, which we can get from agent.collect_data_spec.
