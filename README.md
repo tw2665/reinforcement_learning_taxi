@@ -76,3 +76,10 @@ Original taxi env:
  * Change number of destination or pick-up locations.
  * Limit the direction of turns under some circumstances.
 
+ Policy:
+ 
+ * Policy is a strategy that an agent take.
+ * The goal of RL is to learn the best policy.
+ * Policy is a function which has input as state (or observation) and returns output as action.
+ * We use policy to make an agent decide which action to take in a given state.
+ * In practice, policy is a set of values in a look-up table
