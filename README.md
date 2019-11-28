@@ -117,3 +117,12 @@ Replay buffer:
 * Replay buffer is an object to store trajectory.
 * It gets subset of trajectory to replay a sequence of the subset or sample.
 * It requires data_spec, which we can get from agent.collect_data_spec.
+
+## DQN
+
+* DQN is Deep Q Network. It's neural network that has states as input and produce a vector of action values as output.
+* Selects and evaluate an action, which results in overoptimitic value estimates.
+
+## DDQN
+
+* DDQN is Double Deep Q Network, which can reduce overestimation and can deliver better performance. It says even DQN sometimes overestimates the values of actions. It says on the Atari domain, DDQN delivered a better result than DQN.
