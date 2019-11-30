@@ -126,3 +126,11 @@ Replay buffer:
 ## DDQN
 
 * DDQN is Double Deep Q Network, which can reduce overestimation and can deliver better performance. It says even DQN sometimes overestimates the values of actions. It says on the Atari domain, DDQN delivered a better result than DQN.
+
+## SAC
+
+* SAC is Soft Actor-Critic algorithm
+* Handles discrete and continuous action spaces, off-policy training, combine actor network and critic network.
+* In practice, it largely eliminates the need for per-task hyperparameter tuning.
+* actor-critic architecture separately has policy and value function, efficient off-policy formulation because it resues previously collected data, entropy maximization for stability and exploration.
+
