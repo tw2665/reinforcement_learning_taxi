@@ -12,7 +12,7 @@ This is a group project of Advanced Machine Learning course at Columbia Universi
 
 In this project, we borrow the below Taxi environment from [OpenAI Gym](https://gym.openai.com/) and perform reinforcement learning to solve our task. The yellow box is a taxi, and this color means the taxi does not have a passenger inside. The pink letter suggests a passenger is waiting the taxi, and this passenger wants to go to the destination of a blue letter. Our task is to let the taxi to go to the passenger location, pick it up, take it to the destination, and successfully drop it off. So, in reinforcement learning setting, the taxi is our agent.
 
-![taxi_env][1]
+\center ![taxi_env][1] \center
 
 [1]:https://github.com/tw2665/AML-Project-/blob/master/images/taxi_env.png
 
