@@ -8,6 +8,9 @@ This is a group project of Advanced Machine Learning course at Columbia Universi
 * Yuki Kitayama
 * Liwei Zhang
   
+## Introduction
+
+
 General idea about reinforcement learning
 
   * Make environment (state space) with reward and actions that an agent take (action space), set a goal that the agent wants to achieve, and estimate the optimal path by model or algorithm. 
