@@ -3,10 +3,10 @@
 This is a group project of Advanced Machine Learning course at Columbia University MA in Statistics 2019 Fall.
 
 ## Member   
-* Ethan Li
-* Tianchen Wang
+* [Ethan Li](https://github.com/yichengethanli)
+* [Tianchen Wang](https://github.com/tw2665)
 * [Yuki Kitayama](https://github.com/yukikitayama)
-* Liwei Zhang
+* [Liwei Zhang](https://github.com/Jooooozlw)
   
 ## Introduction
 
@@ -16,22 +16,20 @@ In this project, we borrow the below Taxi environment from [OpenAI Gym](https://
 
 ## Results
 
-Here briefly presents the current results we have. Please see our [report](https://github.com/tw2665/AML-Project-/blob/master/documents/GR5242_Final_Project_Report.pdf) and codes in this project for the detail. We implemented Deep Q Network and Double Deep Q Network and obtained the following rewards.
+Here briefly presents the current results we have. Please see our [report](https://github.com/tw2665/AML-Project-/blob/master/documents/GR5242_Final_Project_Report.pdf) and codes in this project for the detail. We implemented Deep Q Network and Double Deep Q Network and obtained the following rewards. Both DQN and DDQN achieved positive rewards, but even after learning to get positive rewards, the agent still makes huge negative rewards. Although DDQN is said to be more stable and better approach than DQN, our DQN made positive rewards earlier and a bit more stable than DDQN.
 
-**DQN**
 ![dqn_reward][2]
-**DDQN**
 ![ddqn_reward][3]
 
 ## Discussion
-* Learning is not
-* The environment is simple, so maybe we can increase the size of environmet, put some penalty obstacles inside, or add some tasks.
+This was our very first reinforcement learning task, so first we want to say congratulation for us to implement deep reinforcement learning codes and to achieve positive rewards. However, as we can tell, we have a lot to improve our agent, and the learning should be more stable and better. Also, we consider the environment was a bit too simple (5 by 5 park), so maybe we can consider increasing the size of environment, adding some penalty or other tasks inside the environment. We are very excited to open the door to reinforcement learning!
 
 ## Methodology
 The below is the set of methodology that this project has covered. DQN and DDQN are implemented by coding with gym and TensorFlow as well as [TF-Agents](https://github.com/tensorflow/agents)
 * Q-Learning
 * Deep Q Network (DQN)
 * Double Deep Q Network (DDQN)
+* Tricks; epsilon decay, soft target network update, one-hot encoding state representation, skipping training
 
 ## Environment
 * There are 500 discrete states since there are 25 taxi positions, 5 possible locations of the passenger (including the case when the passenger is in the taxi), and 4 destination locations.
@@ -40,6 +38,10 @@ The below is the set of methodology that this project has covered. DQN and DDQN 
 We researched how to modify the existing environment in OpenAI Gym. This would be used for your further analysis.
 * https://github.com/openai/gym/blob/master/docs/creating-environments.md
 * https://github.com/openai/gym-soccer
+
+## Reference
+* https://github.com/phossen/reinforcement-learning-2
+* https://medium.com/@leosimmons/double-dqn-implementation-to-solve-openai-gyms-cartpole-v-0-df554cd0614d
 
 ## Terminology
 * Time step
