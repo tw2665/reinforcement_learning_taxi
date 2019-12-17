@@ -5,7 +5,7 @@ This is a group project of Advanced Machine Learning course at Columbia Universi
 ## Member   
 * Ethan Li
 * Tianchen Wang
-* Yuki Kitayama
+* [Yuki Kitayama](https://github.com/yukikitayama)
 * Liwei Zhang
   
 ## Introduction
