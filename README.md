@@ -1,15 +1,12 @@
-# AML-Project
+# Reinforcement Learning on OpenAI Gym Taxi
 
-Advanced Machine Learning Project
+This is a group project of Advanced Machine Learning course at Columbia University MA in Statistics.
 
-Topic
-  * Reinforcement learning
-  
-Member
-  * Ethan Li
-  * Tianchen Wang
-  * Yuki Kitayama
-  * Liwei Zhang
+## Member   
+* Ethan Li
+* Tianchen Wang
+* Yuki Kitayama
+* Liwei Zhang
   
 General idea about reinforcement learning
 
